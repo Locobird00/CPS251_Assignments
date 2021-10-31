@@ -39,7 +39,7 @@ class MainFragment : Fragment() {
                 binding.logOutput.text = output.toString()
             }
 
-            viewModel.getOutput().observe(viewLifecycleOwner, outputObserver)
+            viewModel.getMsg().observe(viewLifecycleOwner, outputObserver)
         }
 
         lifecycle.addObserver(DemoObserver())
