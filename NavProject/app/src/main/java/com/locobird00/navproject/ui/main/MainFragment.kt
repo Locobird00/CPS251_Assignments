@@ -42,7 +42,7 @@ class MainFragment : Fragment() {
         binding.button.setOnClickListener {
             val action: MainFragmentDirections.MainToSecond = MainFragmentDirections.mainToSecond()
 
-            action.imgValue = getString(R.string.img1_txt)
+            action.imgValue = binding.imageView.contentDescription.toString()
             action.displayImg = R.drawable.android_image_1
             Navigation.findNavController(it).navigate(action)
         }
@@ -50,7 +50,7 @@ class MainFragment : Fragment() {
         binding.button2.setOnClickListener {
             val action: MainFragmentDirections.MainToSecond = MainFragmentDirections.mainToSecond()
 
-            action.imgValue = getString(R.string.img2_txt)
+            action.imgValue = binding.imageView2.contentDescription.toString()
             action.displayImg = R.drawable.android_image_2
             Navigation.findNavController(it).navigate(action)
         }
@@ -58,7 +58,7 @@ class MainFragment : Fragment() {
         binding.button3.setOnClickListener {
             val action: MainFragmentDirections.MainToSecond = MainFragmentDirections.mainToSecond()
 
-            action.imgValue = getString(R.string.img3_txt)
+            action.imgValue = binding.imageView3.contentDescription.toString()
             action.displayImg = R.drawable.android_image_3
             Navigation.findNavController(it).navigate(action)
         }
