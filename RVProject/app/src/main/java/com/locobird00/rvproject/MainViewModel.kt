@@ -1,0 +1,28 @@
+package com.locobird00.rvproject
+
+import androidx.lifecycle.ViewModel
+
+class MainViewModel: ViewModel() {
+
+    private var titles: ArrayList<String> = arrayListOf()
+    private var details: ArrayList<String> = arrayListOf()
+    private var images: ArrayList<Int> = arrayListOf()
+
+    fun setValues(title: String, detail: String, image: Int) {
+        titles.add(title)
+        details.add(detail)
+        images.add(image)
+    }
+
+    fun getTitles(): ArrayList<String> {
+        return titles
+    }
+
+    fun getDetails(): ArrayList<String> {
+        return details
+    }
+
+    fun getImages(): ArrayList<Int> {
+        return images
+    }
+}
