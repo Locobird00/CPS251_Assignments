@@ -4,25 +4,28 @@ import androidx.lifecycle.ViewModel
 
 class MainViewModel: ViewModel() {
 
-    private var titles: ArrayList<String> = arrayListOf()
-    private var details: ArrayList<String> = arrayListOf()
-    private var images: ArrayList<Int> = arrayListOf()
+    companion object {
 
-    fun setValues(title: String, detail: String, image: Int) {
-        titles.add(title)
-        details.add(detail)
-        images.add(image)
-    }
+        private var titles: ArrayList<String> = arrayListOf()
+        private var details: ArrayList<String> = arrayListOf()
+        private var images: ArrayList<Int> = arrayListOf()
 
-    fun getTitles(): ArrayList<String> {
-        return titles
-    }
+        fun setValues(title: String, detail: String, image: Int) {
+            titles.add(title)
+            details.add(detail)
+            images.add(image)
+        }
 
-    fun getDetails(): ArrayList<String> {
-        return details
-    }
+        fun getTitles(): ArrayList<String> {
+            return titles
+        }
 
-    fun getImages(): ArrayList<Int> {
-        return images
+        fun getDetails(): ArrayList<String> {
+            return details
+        }
+
+        fun getImages(): ArrayList<Int> {
+            return images
+        }
     }
 }
