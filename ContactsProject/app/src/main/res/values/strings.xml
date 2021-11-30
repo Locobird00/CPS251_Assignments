@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ContactsProject</string>
+
+    <string name="nameView">Name:</string>
+    <string name="nameInput">Enter Name</string>
+    <string name="phoneView">Phone:</string>
+    <string name="phoneInput">Enter Phone</string>
+
+    <string name="addBtn">Add</string>
+    <string name="findBtn">Find</string>
+    <string name="ascBtn">Asc</string>
+    <string name="descBtn">Desc</string>
+
+    <string name="garbageCan">Delete Contact</string>
+</resources>
